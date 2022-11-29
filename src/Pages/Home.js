@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
-import {Alert, Button, Card, Container, Figure} from "react-bootstrap";
+import {Alert, Button, Card, Container, ListGroup} from "react-bootstrap";
 import foxy from "../assets/images/10.png"
 import marat from "../assets/images/dev_marat.jpg"
+import Developer from "../Components/Developer";
 
 class Home extends Component {
+    popup() {
+        alert("трахтенберг хахахахаха как смешно")
+    }
     render() {
         return (
             <>
-                <Alert className="mt-3" variant="info">
+                <Alert className="mt-3 mx-1" variant="info">
                     <h2 className="text-center">Добро пожаловать на портал об архитекторах Беларуси!</h2>
                     Вставить текст <br/>
                     D'accord, il existait
@@ -49,46 +53,38 @@ class Home extends Component {
                         <Card.Header className="text-center" style={{fontSize: "30px"}}>Деятель дня</Card.Header>
                         <Card.Img src={foxy}/>
                         <Card.Body>
-                            <Card.Title>Фамилия, имя деятеля дня</Card.Title>
+                            <Card.Title>Наум Ефимович Трахтенберг</Card.Title>
+                            <Card.Subtitle className="text-muted mb-3">1910 - 1977</Card.Subtitle>
                             <Card.Text>
-                                Краткая информация <br/>
-                                Краткая информация <br/>
-                                Краткая информация <br/>
-                                Краткая информация <br/>
-                                Краткая информация <br/>
-                                Краткая информация <br/>
+                                Разрабатывая вместе с белорусскими архитекторами генеральные планы городов республики,
+                                проекты планировки и застройки областных центров, Трахтенберг стал одним из
+                                ведущих градостроителей 1930-х гг. В конце 1944 г. он стал главным архитектором генплана
+                                восстановления и развития Минска.
                             </Card.Text>
-                            <Button variant="info">Перейти к статье</Button>
+                            <Button variant="info" onClick={this.popup}>Перейти к статье</Button>
                         </Card.Body>
                     </Card>
                 </Container>
                 <h2 className="text-center mt-5 mb-3">НАША ДРУЖНАЯ КОМАНДА</h2>
-                <Container className="d-flex justify-content-between text-center">
-                    <Figure>
-                        <Figure.Image src={marat} width={200}></Figure.Image>
-                        <Figure.Caption>
-                            <div>Главный разработчик</div>
-                            <a href="https://github.com/dkrumkachev">
-                                муж ЕБЁТ меня<br/> по 4 часа в сутки !<br/>Нужно всего лишь...
-                            </a>
-                        </Figure.Caption>
-                    </Figure>
-                    <Figure>
-                        <Figure.Image src={marat} width={200}></Figure.Image>
-                        <Figure.Caption>
-                            <div>Алексей</div>
-                            <a href="https://github.com/dkrumkachev">вставить текст</a>
-                        </Figure.Caption>
-                    </Figure>
-                    <Figure>
-                        <Figure.Image src={marat} width={200}></Figure.Image>
-                        <Figure.Caption>
-                            <div>Дмитрий</div>
-                            <a href="https://github.com/dkrumkachev">вставить текст</a>
-                        </Figure.Caption>
-                    </Figure>
-                </Container>
-
+                <div className="d-flex justify-content-center mb-2">
+                    <ListGroup horizontal="xxl">
+                        <ListGroup.Item variant="info">
+                            <Developer src={marat} name="Марат Чуклин"
+                                       link="https://github.com/ChuritMaklan"
+                                       mail="cuklinmarat@gmail.com"/>
+                        </ListGroup.Item>
+                        <ListGroup.Item variant="info">
+                            <Developer src={marat} name="Алексей Рябов"
+                                       link="https://github.com/AlexeyRyabov04"
+                                       mail="ryabovalexey04@gmail.com"/>
+                        </ListGroup.Item>
+                        <ListGroup.Item variant="info">
+                            <Developer src={marat} name="Дмитрий Крумкачёв"
+                                       link="https://github.com/dkrumkachev"
+                                       mail="dkrumkachev@gmail.com"/>
+                        </ListGroup.Item>
+                    </ListGroup>
+                </div>
             </>
         );
     }
