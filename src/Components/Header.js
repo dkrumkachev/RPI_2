@@ -8,14 +8,13 @@ class Header extends Component {
     render() {
         return (
             <>
-            <Navbar collapseOnSelect expand="md" bg="secondary" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="info" variant="info">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav className="me-auto">
                             <Nav.Link href="/">Главная</Nav.Link>
                             <Nav.Link href="/architects">Архитекторы</Nav.Link>
-                            <Nav.Link href="/developers">О разработчиках</Nav.Link>
                         </Nav>
                         <Nav>
                             <NavDropdown title="Язык" id="collapsible-nav-dropdown">
@@ -31,7 +30,6 @@ class Header extends Component {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/architects" element={<Architects/>}/>
-                    <Route path="/developers" element={<Home/>}/>
                 </Routes>
             </Router>
             </>
