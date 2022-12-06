@@ -1,0 +1,116 @@
+{
+    "anatoly_zheldakov": {
+        "yearsOfLife": "18.05.1929",
+        "timelineYears": [
+            "1954",
+            "1954-1969",
+            "1990",
+            "1980"
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "nhKt1cdSPqE",
+        "coords": [
+            53.91984833275387,
+            27.57753864907519
+        ]
+    },
+    "georgy_zaborsky": {
+        "yearsOfLife": "11.11.1909 - 27.03.1999",
+        "timelineYears": [
+            "1939",
+            "1945-1964",
+            "1952",
+            "1971"
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "zhiprOQKYXU",
+        "coords": [
+            53.92762123421753,
+            27.595150073301554
+        ]
+    },
+    "vladimir_isachenko": {
+        "yearsOfLife": "15.05.1925",
+        "timelineYears": [
+            "1958",
+            "1967-74",
+            "1992",
+            "1998"
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "ekm9qBRtaQ8",
+        "coords": [
+            53.95858281910702,
+            27.653186475357085
+        ]
+    },
+    "iosif_langbard": {
+        "yearsOfLife": "06.01.1882 - 03.01.1951",
+        "timelineYears": [
+            "1906",
+            "1929",
+            "1935-1950",
+            "1937"
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "EjB7y8OXy54",
+        "coords": [
+            59.85246656555802,
+            30.32544124450957
+        ]
+    },
+    "leonid_levin": {
+        "yearsOfLife": "15.05.1925 - 01.03.2014",
+        "timelineYears": [
+            "1960",
+            "1960—1967 ",
+            "1968",
+            "1997"
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "3QJXk6dIpKQ",
+        "coords": [
+            53.92856065181912,
+            27.52087618946482
+        ]
+    },
+    "anatoly_shabalin": {
+        "yearsOfLife": "06.01.1946",
+        "timelineYears": [
+            "1970",
+            "1982 ",
+            "2004",
+            "2012 "
+        ],
+        "photos": [
+            "img1",
+            "img2",
+            "img3"
+        ],
+        "youtube": "1aOiLJ_Sryc",
+        "coords": [
+            53.936374746908456,
+            27.481688189469793
+        ]
+    }
+}

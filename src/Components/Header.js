@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
-import Home from "../Pages/Home";
-import Architects from "../Pages/Architects";
+import { useTranslation } from 'react-i18next';
+import i18n from "../i18n";
+import { Link } from "react-router-dom"
 
-class Header extends Component {
-    render() {
+const Header = () => {
+    const { t } = useTranslation();
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    } 
         return (
             <>
             <Navbar collapseOnSelect expand="lg" bg="info" variant="info">
@@ -13,28 +16,20 @@ class Header extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Главная</Nav.Link>
-                            <Nav.Link href="/architects">Архитекторы</Nav.Link>
+                            <Nav.Link as= {Link} to = "/">{t("header.main")}</Nav.Link>
+                            <Nav.Link as= {Link} to = "/architects">{t("header.architects")}</Nav.Link>
                         </Nav>
                         <Nav>
-                            <NavDropdown title="Язык" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item href="#action1">Русский</NavDropdown.Item>
-                                <NavDropdown.Item href="#action2">English</NavDropdown.Item>
+                            <NavDropdown title={t("header.language")} id="collapsible-nav-dropdown">
+                                <NavDropdown.Item onClick = {() => changeLanguage("ru")}>Русский</NavDropdown.Item>
+                                <NavDropdown.Item onClick = {() => changeLanguage("en")}>English</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/architects" element={<Architects/>}/>
-                </Routes>
-            </Router>
             </>
         );
     }
-}
 
 export default Header;

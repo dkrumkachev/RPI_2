@@ -1,93 +1,58 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Alert, Button, Card, Container, ListGroup} from "react-bootstrap";
-import foxy from "../assets/images/10.png"
 import marat from "../assets/images/dev_marat.jpg"
 import Developer from "../Components/Developer";
+import { useTranslation } from 'react-i18next';
+import data from "../assets/list.json";
+import { Link } from "react-router-dom"
 
-class Home extends Component {
-    popup() {
-        alert("трахтенберг хахахахаха как смешно")
-    }
-    render() {
-        return (
-            <>
-                <Alert className="mt-3 mx-1" variant="info">
-                    <h2 className="text-center">Добро пожаловать на портал об архитекторах Беларуси!</h2>
-                    Вставить текст <br/>
-                    D'accord, il existait
-                    D'autres façons de se quitter
-                    Quelques éclats de verre
-                    Auraient peut-être pu nous aider
-                    Dans ce silence amer,
-                    J'ai décidé de pardonner
-                    Les erreurs qu'on peut faire
-                    à trop s'aimer
-
-                    D'accord la petite fille en moi
-                    Souvent te réclamait
-                    Presque comme une mère,
-                    Tu me bordais, me protégeais
-                    Je t'ai volé ce sang
-                    Qu'on aurait pas dû partager
-                    A bout de mots, de rêves je vais crier
-
-                    Je t'aime, je t'aime
-                    Comme un fou comme un soldat
-                    Comme une star du cinéma
-                    Je t'aime, je t'aime
-                    Comme un loup, comme un roi
-                    Comme un homme que je ne suis pas
-                    Tu vois, je t'aime comme ça
-
-                    D'accord je t'ai confié
-                    Tous mes sourires, tous mes secrets
-                    Même ceux, dont seul un frère
-                    Est le gardien inavoué
-                    Dans cette maison de pierre,
-                    Satan nous regardait danser
-                    J'ai tant voulu la guerre de corps
-                    Qui se faisaient la paix
+const Home = () => {
+    const { t } = useTranslation();
+    const id = Object.keys(data)[(new Date().getDate()) % Object.keys(data).length];
+    console.log(data)
+    return(
+        <div> 
+        <Alert className="mt-3 mx-1" variant="info">
+                    <h2 className="text-center">{t("home.welcome")}</h2>
+                    <p className = "text-center">{t("home.description")}</p>
                 </Alert>
+                
                 <Container className="d-flex justify-content-center mt-5">
                     <Card border="secondary" style={{width: "500px"}}>
-                        <Card.Header className="text-center" style={{fontSize: "30px"}}>Деятель дня</Card.Header>
-                        <Card.Img src={foxy}/>
+                    <Card.Header className="text-center" style={{fontSize: "30px"}}>{t("home.doerOfDay")}</Card.Header>
+                        <Card.Img src={require(`../assets/images/${id}/avatar.jpg`)}/>
                         <Card.Body>
-                            <Card.Title>Наум Ефимович Трахтенберг</Card.Title>
-                            <Card.Subtitle className="text-muted mb-3">1910 - 1977</Card.Subtitle>
+                            <Card.Title>{t(`${id}.name`)}</Card.Title>
+                            <Card.Subtitle className="text-muted mb-3">{data[id]["yearsOfLife"]}</Card.Subtitle>
                             <Card.Text>
-                                Разрабатывая вместе с белорусскими архитекторами генеральные планы городов республики,
-                                проекты планировки и застройки областных центров, Трахтенберг стал одним из
-                                ведущих градостроителей 1930-х гг. В конце 1944 г. он стал главным архитектором генплана
-                                восстановления и развития Минска.
+                                {t(`${id}.description`)}
                             </Card.Text>
-                            <Button variant="info" onClick={this.popup}>Перейти к статье</Button>
+                            <Button variant="info" as = {Link} to = {`/person/${id}`}>{t("home.goToArticle")}</Button>
                         </Card.Body>
                     </Card>
                 </Container>
-                <h2 className="text-center mt-5 mb-3">НАША ДРУЖНАЯ КОМАНДА</h2>
+                <h2 className="text-center mt-5 mb-3">{t("home.ourTeam")}</h2>
                 <div className="d-flex justify-content-center mb-2">
                     <ListGroup horizontal="xxl">
                         <ListGroup.Item variant="info">
-                            <Developer src={marat} name="Марат Чуклин"
+                            <Developer src={marat} name={t("home.marat")}
                                        link="https://github.com/ChuritMaklan"
                                        mail="cuklinmarat@gmail.com"/>
                         </ListGroup.Item>
                         <ListGroup.Item variant="info">
-                            <Developer src={marat} name="Алексей Рябов"
+                            <Developer src={marat} name={t("home.lesha")}
                                        link="https://github.com/AlexeyRyabov04"
                                        mail="ryabovalexey04@gmail.com"/>
                         </ListGroup.Item>
                         <ListGroup.Item variant="info">
-                            <Developer src={marat} name="Дмитрий Крумкачёв"
+                            <Developer src={marat} name={t("home.dima")}
                                        link="https://github.com/dkrumkachev"
                                        mail="dkrumkachev@gmail.com"/>
                         </ListGroup.Item>
                     </ListGroup>
                 </div>
-            </>
-        );
-    }
+        </div>      
+    )
 }
 
 export default Home;

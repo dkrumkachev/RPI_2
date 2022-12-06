@@ -1,15 +1,23 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from "react-bootstrap";
 import Header from "./Components/Header";
+import { Route, HashRouter, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Architects from "./Pages/Architects";
+import Person from "./Pages/Person"
 
 function App() {
     return (
-        <div>
-            <Header/>
-        </div>
+        <HashRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/architects" element={<Architects />} />
+                <Route path="/person/:id" element={<Person />} />
+            </Routes>
+        </HashRouter>
+
     );
 }
 
