@@ -17,6 +17,7 @@ const Architects = () => {
   const filtered = translated.filter(name => {
     return translated[translated.indexOf(name)].toLowerCase().includes(value.toLowerCase())
   })
+  document.title = t("home.belArch")
   return (
     <div className="container mx-auto font-mono">
       <div className="flex justify-center flex-col align-middle">

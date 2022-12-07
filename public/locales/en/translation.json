@@ -6,12 +6,13 @@
         "language": "Language"
     },
     "home": {
+        "belArch": "Belarusian Architects",
         "title": "Main",
         "welcome": "Welcome to the portal about Belarusian architects!",
         "description": "This portal contains biographies, photos, videos, places of activity of architects who have contributed to the architecture of Belarus.",
         "doerOfDay": "Person of day",
         "goToArticle": "Go to article",
-        "ourTeam": "OUR FRIENDLY TEAM",
+        "ourTeam": "OUR TEAM",
         "marat": "Marat Chuklin",
         "dima": "Dmitriy Krumkachev",
         "lesha": "Alexey Ryabov"

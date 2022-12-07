@@ -10,6 +10,7 @@ import { YMaps, Map, Placemark } from "react-yandex-maps";
 const Person = () => {
   const { t } = useTranslation();
   const { id } = useParams()
+  document.title = t(`${id}.name`)
   return (
     <div className="container mx-auto font-mono">
       <Container className="d-flex justify-content-center mt-5">
