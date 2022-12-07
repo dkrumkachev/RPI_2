@@ -45,7 +45,7 @@ const Person = () => {
       <iframe className="w-100 mb-5" style={{ height: "600px" }}
         src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}
       />
-      <YMaps query={{
+      <YMaps key = {t("locale")} query={{
         lang: t("locale"),
         load: 'Map,Placemark'
       }}>
@@ -53,7 +53,7 @@ const Person = () => {
           <Map class= "me-auto ms-auto w-100 mb-5" style={{ height: "600px" }}
             defaultState={{
               center: data[id]["coords"],
-              zoom: 14
+              zoom: 18
             }}>
             <Placemark defaultGeometry={data[id]["coords"]} />
             
