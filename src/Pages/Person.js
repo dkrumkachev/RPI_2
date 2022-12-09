@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Person.css"
 import { Card, Container, Carousel } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
@@ -14,7 +15,7 @@ const Person = () => {
   return (
     <div className="container mx-auto font-mono">
       <Container className="d-flex justify-content-center mt-5">
-        <Card border="secondary" style={{ width: "500px" }}>
+        <Card border="secondary" style={{ width: "50%" }}>
           <Card.Img src={require(`../assets/images/${id}/avatar.jpg`)} />
           <Card.Body>
             <Card.Title className="text-center">{t(`${id}.name`)}</Card.Title>
@@ -32,33 +33,31 @@ const Person = () => {
           )
         }
       </Timeline>
-      <Carousel className="d-flex justify-content-center mb-5">
+      <Carousel className="carousel">
         {
           data[id]["photos"].map((text, index) =>
-            <Carousel.Item >
-              <img className="d-block w-100" style={{ height: "600px" }} src={require(`../assets/images/${id}/${index + 1}.jpg`)} />
+            <Carousel.Item key={index} className="text-center">
+              <img className="d-block image" src={require(`../assets/images/${id}/${index + 1}.jpg`)} />
               <Carousel.Caption>{t(`${id}.imgText${index}`)}</Carousel.Caption>
             </Carousel.Item>
           )
         }
       </Carousel>
       <iframe className="w-100 mb-5" style={{ height: "600px" }}
-        src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}
+        src={`https://www.youtube.com/embed/${data[id]["youtube"]}`}  
+        allowFullScreen
       />
-      <YMaps query={{
+      <YMaps key={t("locale")} query={{
         lang: t("locale"),
         load: 'Map,Placemark'
       }}>
-      
-          <Map class= "me-auto ms-auto w-100 mb-5" style={{ height: "600px" }}
-            defaultState={{
-              center: data[id]["coords"],
-              zoom: 14
-            }}>
-            <Placemark defaultGeometry={data[id]["coords"]} />
-            
-          </Map>
-        
+        <Map className="me-auto ms-auto w-100 mb-5" style={{ height: "600px" }}
+          defaultState={{
+            center: data[id]["coords"],
+            zoom: 18
+          }}>
+          <Placemark defaultGeometry={data[id]["coords"]} />
+        </Map>
       </YMaps>
 
     </div>

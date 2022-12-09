@@ -18,7 +18,7 @@ const Home = () => {
             </Alert>
 
             <Container className="d-flex justify-content-center mt-5">
-                <Card border="secondary" style={{ width: "500px" }}>
+                <Card border="secondary" style={{ width: "50%" }}>
                     <Card.Header className="text-center" style={{ fontSize: "30px" }}>{t("home.doerOfDay")}</Card.Header>
                     <Card.Img src={require(`../assets/images/${id}/avatar.jpg`)} />
                     <Card.Body>

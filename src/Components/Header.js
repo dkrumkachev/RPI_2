@@ -11,7 +11,7 @@ const Header = () => {
     } 
         return (
             <>
-            <Navbar collapseOnSelect expand="lg" bg="info" variant="info">
+            <Navbar collapseOnSelect bg="info" variant="info">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav" >
