@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/RPI_2/static/css/main.05813fea.css",
+    "main.js": "/RPI_2/static/js/main.21805efd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/RPI_2/static/js/787.28cb0dcd.chunk.js",
+    "static/media/2.jpg": "/RPI_2/static/media/2.d057dc3fb67fbe9cf5db.jpg",
+    "static/media/3.jpg": "/RPI_2/static/media/3.45d05c56b3efe09c3b99.jpg",
+    "static/media/1.jpg": "/RPI_2/static/media/1.7829869d0ae91de499b4.jpg",
+    "static/media/dev_marat.jpg": "/RPI_2/static/media/dev_marat.70a2e853e0e2e973c38e.jpg",
+    "static/media/avatar.jpg": "/RPI_2/static/media/avatar.276de89e692caacf0c6f.jpg",
+    "index.html": "/RPI_2/index.html",
+    "static/media/getFetch.cjs": "/RPI_2/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.05813fea.css.map": "/RPI_2/static/css/main.05813fea.css.map",
+    "main.21805efd.js.map": "/RPI_2/static/js/main.21805efd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/RPI_2/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05813fea.css",
+    "static/js/main.21805efd.js"
+  ]
+}

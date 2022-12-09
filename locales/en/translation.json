@@ -1,0 +1,86 @@
+{
+    "locale": "en_US",
+    "header": {
+        "main": "Main",
+        "architects": "Architects",
+        "language": "Language"
+    },
+    "home": {
+        "belArch": "Belarusian Architects",
+        "title": "Main",
+        "welcome": "Welcome to the portal about Belarusian architects!",
+        "description": "This portal contains biographies, photos, videos, places of activity of architects who have contributed to the architecture of Belarus.",
+        "doerOfDay": "Person of day",
+        "goToArticle": "Go to article",
+        "ourTeam": "OUR TEAM",
+        "marat": "Marat Chuklin",
+        "dima": "Dmitriy Krumkachev",
+        "lesha": "Alexey Ryabov"
+    },
+    "anatoly_zheldakov": {
+        "name": "Zheldakov Anatoly Vladimirovich",
+        "timeText0": "Graduated from the Moscow Architectural Institute (MARCHI).",
+        "timeText1": "Worked as the chief architect of projects at the institute «Volgogradgrazhdanproekt»",
+        "timeText2": "Became the head of the creative workshop of the Belarusian Union of Architects",
+        "timeText3": "Designed the Minsk covered market Komarovksky",
+        "imgText0": "Anatoly Zheldakov during The Great Patriotic War",
+        "imgText1": "Komarovsky market",
+        "imgText2": "Shopping center Riga",
+        "description": "Soviet and Belarusian architect. Honored Architect of the Republic of Belarus (1991). Awarded with medals, a diploma of the Union of Architects of the USSR."
+    },
+    "iosif_langbard": {
+        "name": "Langbard Iosif Grigorievich",
+        "timeText0": "Graduated from the architectural department of the Odessa Art College",
+        "timeText1": "Won the all-Union competition for the best project of the Government House of the Byelorussian SSR",
+        "timeText2": "He taught at the Leningrad Institute of Painting, Sculpture and Architecture (LIPSA)",
+        "timeText3": "Became the owner of the Grand Prix of the World Exhibition in Paris",
+        "imgText0": "Watercolor by Joseph Langbard «Minsk». Museum of the History of Minsk.",
+        "imgText1": "The building of the Academy of Sciences in Minsk",
+        "imgText2": "Banknote of 100 Belarusian rubles (2000 y.) depicting the Langbard building.",
+        "description": "He is one of the outstanding architects of Europe of the 20th century, whose artistic heritage had a significant impact on the development of modern architecture. His architectural works to a large extent influenced the formation of the image of the city of Minsk and are examples of Belarusian architecture."
+    },
+    "georgy_zaborsky": {
+        "name": "Zaborsky Georgy Vladimirovich",
+        "timeText0": "Graduated from the Leningrad Institute of Painting, Sculpture and Architecture",
+        "timeText1": "Managed the architectural and design workshops of the design institutes Belgosproekt and Minskproekt",
+        "timeText2": "Designed a house for the family of J. Kolas",
+        "timeText3": "Received the State Prize of the USSR",
+        "imgText0": "Memorial plaque on the house 19-21 on Independence Ave.",
+        "imgText1": "Suvorov School on the street. Maxim Bogdanovich (1950-1953)",
+        "imgText2": "Victory Monument in Minsk",
+        "description": "The creative contribution of G. V. Zaborsky to the development of Belarusian architecture consists in the development of projects for residential and public buildings, urban planning projects, planning and development projects for rural settlements and the creation of monuments of monumental art. Of great importance in the creative heritage of the architect is the development of a national theme, which can be traced both in urban buildings of the neoclassical period, where the author actively uses the Belarusian ornament, and in rural construction in the subsequent period of work (projects of rural palaces of culture)"
+    },
+    "vladimir_isachenko": {
+        "name": "Isachenko Vladimir Grigorievich",
+        "timeText0": "Graduated from the Belarusian State Polytechnic Institute (BPI)",
+        "timeText1": "Worked as the head of the department for construction and architecture of the Grodno regional executive committee",
+        "timeText2": "Participated in the development of forecasts for the territorial development of nine cities",
+        "timeText3": "Awarded the title of Honored Architect of the Republic of Belarus",
+        "imgText0": "House of officers in Lida",
+        "imgText1": "Dispensary-sanatorium in Novopolotsk",
+        "imgText2": "Administrative building on the central square of Borisov",
+        "description": "Belarusian architect. Honored Architect of the Republic of Belarus (1998). Member of the Union of Architects of the USSR (1967), Belarusian Union of Architects."
+    },
+    "leonid_levin": {
+        "name": "Levin Leonid Mendelevich",
+        "timeText0": "Graduated from the Belarusian State Polytechnic Institute (BPI)",
+        "timeText1": "Participation in the creation of the park. 50th anniversary of Soviet power",
+        "timeText2": "Participation in the creation of the exhibition pavilion VDNH BSSR in Minsk",
+        "timeText3": "Director of the own creative workshop of the Unitary Enterprise «Creative workshop of architect L. Levin»",
+        "imgText0": "Memorial complex ‘Khatyn’",
+        "imgText1": "Park them. 50th anniversary of Soviet power",
+        "imgText2": "Metro station Nemiga",
+        "description": "Honored Architect of the Republic of Belarus, Laureate of the Lenin Prize and Lenin Komsomol Prize, Laureate of the Volgograd Komsomol Prize, twice winner of the State Prize of the Republic of Belarus, laureate of many prestigious competitions and reviews of architectural works, Academician of the International and Belarusian Academies of Architecture."
+    },
+    "anatoly_shabalin": {
+        "name": "Shabalin Anatoly Andreevich",
+        "timeText0": "Graduated from the Belarusian State Polytechnic Institute (BPI)",
+        "timeText1": "Chief Architect of the Institute «Belgosproekt»",
+        "timeText2": "For a complex artistic solution of the interiors of the Palace of the Republic in Minsk, he was awarded the State Prize of the Republic of Belarus",
+        "timeText3": "Creation of a multidisciplinary cultural and sports complex «Minsk Arena»",
+        "imgText0": "Minsk Arena",
+        "imgText1": "Palace of the Republic",
+        "imgText2": "Snapshot from «Znamenki» (Anatoly Shabalin third from left)",
+        "description": "Architect, author of the development of working drawings and interiors of the Palace of the Republic, developer of the technology of stage complexes and lighting complexes of the large and small halls, author of the engineering block of the Palace of the Republic and the master plan of Oktyabrskaya Square."
+    }
+}
