@@ -1,0 +1,13 @@
+.carousel .image{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    margin-top: 30px;
+    height: 600px;
+}
+.carousel{
+    background-color: #1dc3f5;
+    width: 100%;
+    margin-bottom: 30px;
+}

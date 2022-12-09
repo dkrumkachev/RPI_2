@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Architects.css"
 import { Form, InputGroup, ListGroup } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom"
@@ -33,7 +34,13 @@ const Architects = () => {
         <ListGroup className="mt-1" >
           {filtered.map(elem =>
             <ListGroup.Item key={translated.indexOf(elem)} action variant="info" as={Link} to={`/person/${keys[translated.indexOf(elem)]}`} >
-              <div >{t(`${elem}`)}</div>
+              <div className="d-flex">
+                <img className="w-25 h-100 my-auto " src={require(`../assets/images/${keys[translated.indexOf(elem)]}/avatar.jpg`)} />
+                <div className="text w-75">
+                  <p className="fw-bold">{t(`${elem}`)}</p>
+                  <p>{t(`${keys[translated.indexOf(elem)]}.description`)}</p>
+                </div>
+              </div>
             </ListGroup.Item>
 
           )
