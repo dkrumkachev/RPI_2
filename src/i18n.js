@@ -11,6 +11,7 @@ const resources = {
 }
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     fallbackLng: "ru",
+    resources,
     debug: true,
     detection: {
         order: ['localStorage', 'cookie'],
