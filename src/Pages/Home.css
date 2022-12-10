@@ -1,0 +1,8 @@
+.doer{
+    width: 40%;
+}
+@media only screen and (max-width: 768px){
+    .doer{
+        width:70%
+    }
+} 

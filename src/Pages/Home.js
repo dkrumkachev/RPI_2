@@ -4,6 +4,7 @@ import marat from "../assets/images/dev_marat.jpg"
 import Developer from "../Components/Developer";
 import { useTranslation } from 'react-i18next';
 import data from "../assets/list.json";
+import "./Home.css"
 import { Link } from "react-router-dom"
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
             </Alert>
 
             <Container className="d-flex justify-content-center mt-5">
-                <Card border="secondary" style={{ width: "50%" }}>
+                <Card border="secondary" className = "doer">
                     <Card.Header className="text-center" style={{ fontSize: "30px" }}>{t("home.doerOfDay")}</Card.Header>
                     <Card.Img src={require(`../assets/images/${id}/avatar.jpg`)} />
                     <Card.Body>
