@@ -11,7 +11,7 @@ const Header = () => {
     } 
         return (
             <>
-            <Navbar collapseOnSelect bg="info" variant="info">
+            <Navbar collapseOnSelect bg="info" collapse = "" variant="info">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav" >
@@ -20,7 +20,7 @@ const Header = () => {
                             <Nav.Link as= {Link} to = "/architects">{t("header.architects")}</Nav.Link>
                         </Nav>
                         <Nav>
-                            <NavDropdown title={t("header.language")} id="collapsible-nav-dropdown">
+                            <NavDropdown align="end" title={t("header.language")} id="dropdown-menu-align-end">
                                 <NavDropdown.Item onClick = {() => changeLanguage("ru")}>Русский</NavDropdown.Item>
                                 <NavDropdown.Item onClick = {() => changeLanguage("en")}>English</NavDropdown.Item>
                             </NavDropdown>
